@@ -23,6 +23,5 @@ public  class  TestRandom {
 			System.out.println("> 0.5:" + "   " + lessThen + " times");
 			System.out.println("<= 0.5:" + "  " + greaterThen + " times");
 		}
-
 	}
 }
