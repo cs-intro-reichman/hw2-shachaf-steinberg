@@ -4,7 +4,7 @@ public  class  TestRandom {
 	double lessThen = 0;
 	double greaterThen = 0;
 	
-
+		// counts n times if greater or less then 0.5
 		for (int i = 0; i < nTimes; i++) {
 			double randomNumber = Math.random();
 			if (randomNumber > 0.5) {
@@ -13,7 +13,7 @@ public  class  TestRandom {
 				lessThen++;
 			}
 		}
-			
+		// makes sure that the edge case of == 0 wont give an error
 		if (greaterThen != 0 && lessThen != 0) {
 			double ratio = (double) greaterThen / lessThen;
 			System.out.println("> 0.5:" + "   " + lessThen + " times");
