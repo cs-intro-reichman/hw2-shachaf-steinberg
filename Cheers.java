@@ -6,6 +6,7 @@ public class Cheers {
     int times = Integer.parseInt(args[1]);
     String anOrA = "";
 
+    // Check if any of the special letters appear and change "a" to "an"
     String specialLetters = "AEFHILMNORSX";
         for (int j = 0; j < word.length(); j++) {
              anOrA = "a";
