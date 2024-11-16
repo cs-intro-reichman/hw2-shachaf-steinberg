@@ -9,14 +9,14 @@ public class Cheers {
     // Check if any of the special letters appear and change "a" to "an"
     String specialLetters = "AEFHILMNORSX";
         for (int j = 0; j < word.length(); j++) {
-             anOrA = "a";
+             anOrA = "a ";
              for (int n = 0; n < specialLetters.length(); n++) {
                 if (word.charAt(j) == specialLetters.charAt(n)) {
                     anOrA = "an";
                     break;    
                 }
             }
-            System.out.println("Give me " + anOrA + " " + word.charAt(j) + "!");            
+            System.out.println("Give me " + anOrA + " " + word.charAt(j) + ": " + word.charAt(j) + "!");            
         }
 
         System.out.println("What does that spell?");
