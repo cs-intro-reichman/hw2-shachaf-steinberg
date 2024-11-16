@@ -1,8 +1,8 @@
 public  class  TestRandom {
 	public static void main(String[]  args) {
 	int nTimes = Integer.parseInt(args[0]);
-	double lessThen = 0;
-	double greaterThen = 0;
+	int lessThen = 0;
+	int greaterThen = 0;
 	
 		// counts n times if greater or less then 0.5
 		for (int i = 0; i < nTimes; i++) {
