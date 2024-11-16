@@ -13,6 +13,7 @@ public  class  TestRandom {
 				lessThen++;
 			}
 		}
+		
 		// makes sure that the edge case of == 0 wont give an error
 		if (greaterThen != 0 && lessThen != 0) {
 			double ratio = (double) greaterThen / lessThen;
