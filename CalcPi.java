@@ -5,6 +5,7 @@ public class CalcPi {
 	double divider = 1.0;
 	double sum = 0.0;
 	
+	// calculate the aprox of PI  with according to times
 		for (int i = 1; i <= times; i++) {
 			if (i % 2 == 0) {
 				sum -= (1.0 / divider);
