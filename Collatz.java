@@ -3,10 +3,11 @@ public class Collatz {
 	int num = Integer.parseInt(args[0]);
 	String verboseOrConcise = args[1];
 	int times = 1;
-
+		// give a different output for verbose or concise
 		if (verboseOrConcise.equals("c")) {
 			System.out.println("Every one of the first " + num + " hailstone sequences reached 1.");
 		} else if (verboseOrConcise.equals("v")) {
+			// for loop just for the first row when seed = 1
 			for (int i = 1; i <= num; i++) {
 				int seed = i;
 				String str = "";
@@ -15,6 +16,7 @@ public class Collatz {
 					seed = (seed * 3) + 1;
 					str += seed + " ";
 				}  
+				// the remainder of the loop when seed !=n 
 					while (seed != 1) {
 						if (seed % 2 == 0) {
 							seed /= 2;
